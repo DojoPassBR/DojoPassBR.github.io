@@ -77,6 +77,14 @@ p { color: var(--text-muted); margin: 0 0 16px; }
 
 .header-cta { white-space: nowrap; }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-login { white-space: nowrap; }
+
 /* Buttons */
 .btn {
   display: inline-block;
@@ -376,4 +384,8 @@ p { color: var(--text-muted); margin: 0 0 16px; }
 
 @media (max-width: 720px) {
   .header-nav { display: none; }
+}
+
+@media (max-width: 480px) {
+  .header-login { display: none; }
 }
