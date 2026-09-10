@@ -35,6 +35,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -83,11 +84,15 @@ img {
 .brand-logo {
   display: block;
   width: 174px;
+  max-width: 174px;
   height: auto;
 }
 
 .brand-logo-final {
-  width: 168px;
+  width: 168px !important;
+  max-width: 168px !important;
+  max-height: 56px;
+  object-fit: contain;
 }
 
 .nav {
@@ -310,8 +315,11 @@ img {
 
 .preview-brand img {
   width: 124px;
+  max-width: 124px;
+  max-height: 42px;
   height: auto;
   border-radius: 0;
+  object-fit: contain;
 }
 
 .preview-topbar span {
